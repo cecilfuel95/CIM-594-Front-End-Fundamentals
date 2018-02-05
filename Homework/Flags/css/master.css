@@ -1,15 +1,882 @@
-.flag {
-  width: 400px;
+/*
+Initial Code Provided by
+css-tricks.com/examples/ShapesOfCSS/
+*/
+.flagcontainer {
+  background-color: #ddd;
+  width: 500px;
   height: 300px;
-  border: 1px solid #ccc;
-}
+  margin: 5px;
+  padding: 5px;
+  /*Nepal Flag*/
+  /*1:1 Flags*/
+  /*8:11 Flags*/
+  /*2:3 Flags*/
+  /*10:19 Flags*/
+  /*1:2 Flags*/
+  /*11:28 Flags (a.k.a Qatar)*/ }
+  .flagcontainer h2 {
+    margin: 5px 0; }
+  .flagcontainer .rel {
+    position: relative; }
+  .flagcontainer .one-one, .flagcontainer .eight-eleven, .flagcontainer .two-three, .flagcontainer .one-two, .flagcontainer .ten-nineteen, .flagcontainer .eleven-twentyeight {
+    position: absolute; }
+  .flagcontainer #nepal {
+    width: 205px;
+    height: 250px; }
+    .flagcontainer #nepal #topblue .botleft-triangle {
+      width: 0;
+      height: 0;
+      border-bottom: 128px solid darkblue;
+      border-right: 205px solid transparent; }
+    .flagcontainer #nepal #botblue {
+      top: -75px; }
+      .flagcontainer #nepal #botblue .botleft-triangle {
+        width: 0;
+        height: 0;
+        border-bottom: 196px solid darkblue;
+        border-right: 198px solid transparent; }
+    .flagcontainer #nepal #topred {
+      top: -310px;
+      left: 7px; }
+      .flagcontainer #nepal #topred .botleft-triangle {
+        width: 0;
+        height: 0;
+        border-bottom: 107px solid red;
+        border-right: 173px solid transparent; }
+    .flagcontainer #nepal #botred {
+      top: -361px;
+      left: 7px; }
+      .flagcontainer #nepal #botred .botleft-triangle {
+        width: 0;
+        height: 0;
+        border-bottom: 171px solid red;
+        border-right: 171px solid transparent; }
+    .flagcontainer #nepal #nepal-small {
+      top: -574px;
+      left: 38px; }
+      .flagcontainer #nepal #nepal-small .twelver {
+        background: white;
+        width: 26.4px;
+        height: 26.4px;
+        position: relative;
+        text-align: center; }
+      .flagcontainer #nepal #nepal-small .twelver:before, .flagcontainer #nepal #nepal-small .twelver:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 26.4px;
+        width: 26.4px;
+        background: white; }
+      .flagcontainer #nepal #nepal-small .twelver:before {
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg); }
+      .flagcontainer #nepal #nepal-small .twelver:after {
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        -o-transform: rotate(60deg); }
+    .flagcontainer #nepal #nepal-large {
+      top: -447.5px;
+      left: 22.5px; }
+      .flagcontainer #nepal #nepal-large .twelver {
+        background: white;
+        width: 53.6px;
+        height: 53.6px;
+        position: relative;
+        text-align: center; }
+      .flagcontainer #nepal #nepal-large .twelver:before, .flagcontainer #nepal #nepal-large .twelver:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 53.6px;
+        width: 53.6px;
+        background: white; }
+      .flagcontainer #nepal #nepal-large .twelver:before {
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg); }
+      .flagcontainer #nepal #nepal-large .twelver:after {
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        -o-transform: rotate(60deg); }
+    .flagcontainer #nepal .crescent {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 11.25px 11.25px 0 0 white; }
+    .flagcontainer #nepal .crescent {
+      transform: rotate(45deg);
+      top: -640px;
+      left: 22px; }
+  .flagcontainer .one-one {
+    height: 250px;
+    width: 250px; }
+  .flagcontainer #switzerland {
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    border: 100px solid red;
+    border-width: 100px 50px; }
+    .flagcontainer #switzerland .bar {
+      background-color: #fff;
+      width: 50px;
+      height: 150px;
+      top: -50px;
+      left: 50px; }
+  .flagcontainer .eight-eleven {
+    width: 275px;
+    height: 200px; }
+  .flagcontainer #norway {
+    background-color: red;
+    overflow: hidden; }
+    .flagcontainer #norway #nw-whitecross {
+      left: 75px; }
+      .flagcontainer #norway #nw-whitecross .cross {
+        background: white;
+        height: 200px;
+        position: relative;
+        width: 40px; }
+      .flagcontainer #norway #nw-whitecross .cross:after {
+        background: white;
+        content: "";
+        height: 40px;
+        left: -140px;
+        position: absolute;
+        top: 80px;
+        width: 350px; }
+    .flagcontainer #norway #nw-bluecross {
+      top: -202.5px;
+      left: 85px; }
+      .flagcontainer #norway #nw-bluecross .cross {
+        background: navy;
+        height: 230px;
+        position: relative;
+        width: 20px; }
+      .flagcontainer #norway #nw-bluecross .cross:after {
+        background: navy;
+        content: "";
+        height: 20px;
+        left: -140px;
+        position: absolute;
+        top: 92px;
+        width: 350px; }
+  .flagcontainer .two-three {
+    height: 200px;
+    width: 300px; }
+  .flagcontainer #djibouti {
+    background-color: limegreen;
+    height: 100px;
+    border-top: 100px solid skyblue; }
+    .flagcontainer #djibouti .triangle {
+      width: 0;
+      height: 0;
+      border-top: 100px solid transparent;
+      border-left: 160px solid white;
+      border-bottom: 100px solid transparent; }
+    .flagcontainer #djibouti .triangle {
+      top: -100px; }
+    .flagcontainer #djibouti .star {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: red;
+      width: 0px;
+      height: 0px;
+      border-right: 30px solid transparent;
+      border-bottom: 21px solid red;
+      border-left: 30px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .flagcontainer #djibouti .star:before {
+      border-bottom: 24px solid red;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -13.5px;
+      left: -19.5px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .flagcontainer #djibouti .star:after {
+      position: absolute;
+      display: block;
+      color: red;
+      top: 0.9px;
+      left: -31.5px;
+      width: 0px;
+      height: 0px;
+      border-right: 30px solid transparent;
+      border-bottom: 21px solid red;
+      border-left: 30px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+    .flagcontainer #djibouti .star {
+      top: -260px;
+      left: 30px; }
+  .flagcontainer #pakistan {
+    background-color: darkgreen;
+    width: 233px;
+    border-left: 67px solid white; }
+  .flagcontainer .star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: white;
+    width: 0px;
+    height: 0px;
+    border-right: 15px solid transparent;
+    border-bottom: 10.5px solid white;
+    border-left: 15px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg); }
+  .flagcontainer .star:before {
+    border-bottom: 12px solid white;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -6.75px;
+    left: -9.75px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg); }
+  .flagcontainer .star:after {
+    position: absolute;
+    display: block;
+    color: white;
+    top: 0.45px;
+    left: -15.75px;
+    width: 0px;
+    height: 0px;
+    border-right: 15px solid transparent;
+    border-bottom: 10.5px solid white;
+    border-left: 15px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: ''; }
+  .flagcontainer .star {
+    top: 0px;
+    left: 140px;
+    transform: rotate(15deg); }
+  .flagcontainer .crescent {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    box-shadow: 21px 21px 0 0 white; }
+  .flagcontainer .crescent {
+    top: -90px;
+    left: 80px;
+    transform: rotate(90deg); }
+  .flagcontainer #southafrica {
+    background-color: darkblue;
+    overflow: hidden; }
+    .flagcontainer #southafrica .red {
+      width: 300px;
+      height: 100px; }
+    .flagcontainer #southafrica #saf-white {
+      position: relative;
+      top: -110px; }
+      .flagcontainer #southafrica #saf-white .triangle {
+        width: 0;
+        height: 0;
+        border-top: 110px solid transparent;
+        border-left: 176px solid white;
+        border-bottom: 110px solid transparent; }
+    .flagcontainer #southafrica #saf-green {
+      position: relative;
+      top: -320px; }
+      .flagcontainer #southafrica #saf-green .triangle {
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent;
+        border-left: 160px solid green;
+        border-bottom: 100px solid transparent; }
+    .flagcontainer #southafrica #saf-gold {
+      position: relative;
+      top: -495px; }
+      .flagcontainer #southafrica #saf-gold .triangle {
+        width: 0;
+        height: 0;
+        border-top: 75px solid transparent;
+        border-left: 120px solid gold;
+        border-bottom: 75px solid transparent; }
+    .flagcontainer #southafrica #saf-black {
+      position: relative;
+      top: -635px; }
+      .flagcontainer #southafrica #saf-black .triangle {
+        width: 0;
+        height: 0;
+        border-top: 65px solid transparent;
+        border-left: 104px solid black;
+        border-bottom: 65px solid transparent; }
+    .flagcontainer #southafrica .bar {
+      background-color: green;
+      width: 165px;
+      height: 32px;
+      border-top: 9px solid white;
+      border-bottom: 9px solid white;
+      top: -725px;
+      left: 135px; }
+  .flagcontainer #car {
+    background-color: limegreen;
+    height: 100px;
+    border-top: 50px solid darkblue;
+    border-bottom: 50px solid gold; }
+    .flagcontainer #car:before {
+      content: " ";
+      display: inline-block;
+      background-color: white;
+      height: 50px;
+      width: 300px; }
+    .flagcontainer #car .star {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: gold;
+      width: 0px;
+      height: 0px;
+      border-right: 20px solid transparent;
+      border-bottom: 14px solid gold;
+      border-left: 20px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .flagcontainer #car .star:before {
+      border-bottom: 16px solid gold;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -9px;
+      left: -13px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .flagcontainer #car .star:after {
+      position: absolute;
+      display: block;
+      color: gold;
+      top: 0.6px;
+      left: -21px;
+      width: 0px;
+      height: 0px;
+      border-right: 20px solid transparent;
+      border-bottom: 14px solid gold;
+      border-left: 20px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+    .flagcontainer #car .star {
+      top: -135px;
+      left: 20px; }
+    .flagcontainer #car .bar {
+      background-color: red;
+      width: 50px;
+      height: 200px;
+      top: -218px;
+      left: 125px; }
+  .flagcontainer #greece {
+    background-color: blue;
+    height: 155.56px;
+    border-top: 22.22px solid blue;
+    border-bottom: 22.22px solid blue; }
+    .flagcontainer #greece:before {
+      content: " ";
+      display: inline-block;
+      background-color: blue;
+      height: 22.22px;
+      width: 300px;
+      border-top: 22.22px solid white;
+      border-bottom: 22.22px solid white; }
+    .flagcontainer #greece:after {
+      content: " ";
+      display: inline-block;
+      position: relative;
+      top: -204px;
+      background-color: blue;
+      height: 22.22px;
+      width: 300px;
+      border-top: 22.22px solid white;
+      border-bottom: 22.22px solid white; }
+    .flagcontainer #greece .square {
+      height: 22.22px;
+      width: 111.1px;
+      border-top: 44.44px solid blue;
+      border-bottom: 44.44px solid blue;
+      background-color: white;
+      top: -93px; }
+    .flagcontainer #greece .bar {
+      height: 111.1px;
+      width: 22.22px;
+      background-color: white;
+      left: 44.44px;
+      top: -204px; }
+  .flagcontainer #rok {
+    background-color: white; }
+    .flagcontainer #rok .yinyang {
+      width: 120px;
+      height: 60px;
+      background: red;
+      border-color: blue;
+      border-style: solid;
+      border-width: 0px 0px 50px 0px;
+      border-radius: 100%;
+      position: relative; }
+    .flagcontainer #rok .yinyang:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: blue;
+      border: 22.5px solid blue;
+      border-radius: 100%;
+      width: 15px;
+      height: 7.5px; }
+    .flagcontainer #rok .yinyang:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      background: red;
+      border: 22.5px solid red;
+      border-radius: 100%;
+      width: 15px;
+      height: 7.5px; }
+    .flagcontainer #rok .yinyang {
+      transform: rotate(15deg);
+      top: 48px;
+      left: 80px; }
+    .flagcontainer #rok .rokbars {
+      background-color: black;
+      width: 45px;
+      height: 10px;
+      border-top: 10px solid black;
+      border-bottom: 10px solid black; }
+      .flagcontainer #rok .rokbars .bar {
+        background-color: white;
+        width: 5px; }
+      .flagcontainer #rok .rokbars:before {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        width: 45px;
+        height: 5px; }
+      .flagcontainer #rok .rokbars:after {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        width: 45px;
+        height: 5px;
+        top: -70px; }
+    .flagcontainer #rok #rok-topleft {
+      top: -85px;
+      left: 50px;
+      transform: rotate(130deg); }
+      .flagcontainer #rok #rok-topleft:after {
+        top: -30px; }
+    .flagcontainer #rok #rok-topright {
+      top: -115px;
+      left: 190px;
+      transform: rotate(40deg); }
+      .flagcontainer #rok #rok-topright .one {
+        height: 20px;
+        left: 20px;
+        top: -40px; }
+      .flagcontainer #rok #rok-topright .two {
+        height: 20px;
+        left: 20px;
+        top: -25px; }
+    .flagcontainer #rok #rok-bottomleft {
+      top: -20px;
+      left: 50px;
+      transform: rotate(40deg); }
+      .flagcontainer #rok #rok-bottomleft .three {
+        height: 10px;
+        left: 20px;
+        top: -18px; }
+      .flagcontainer #rok #rok-bottomleft:after {
+        top: -40px; }
+    .flagcontainer #rok #rok-bottomright {
+      top: -50px;
+      left: 190px;
+      transform: rotate(130deg); }
+      .flagcontainer #rok #rok-bottomright .four {
+        height: 40px;
+        left: 20px;
+        top: -30px; }
+  .flagcontainer #greenland {
+    background-color: darkred; }
+    .flagcontainer #greenland:before {
+      content: " ";
+      display: inline-block;
+      background-color: white;
+      height: 100px;
+      width: 300px; }
+    .flagcontainer #greenland .halfcircle1 {
+      position: relative;
+      width: 0px;
+      height: 0px;
+      top: -75px;
+      left: 40px;
+      border-right: 75px solid transparent;
+      border-top: 75px solid transparent;
+      border-left: 75px solid darkred;
+      border-bottom: 75px solid darkred;
+      border-top-left-radius: 75px;
+      border-top-right-radius: 75px;
+      border-bottom-left-radius: 75px;
+      border-bottom-right-radius: 75px;
+      transform: rotate(135deg); }
+    .flagcontainer #greenland .halfcircle2 {
+      position: relative;
+      width: 0px;
+      height: 0px;
+      top: -229px;
+      left: 40px;
+      border-right: 75px solid transparent;
+      border-top: 75px solid transparent;
+      border-left: 75px solid white;
+      border-bottom: 75px solid white;
+      border-top-left-radius: 75px;
+      border-top-right-radius: 75px;
+      border-bottom-left-radius: 75px;
+      border-bottom-right-radius: 75px;
+      transform: rotate(-45deg); }
+  .flagcontainer #bhutan {
+    width: 0;
+    height: 0;
+    background-color: darkorange;
+    border-top: 200px solid gold;
+    border-right: 300px solid transparent; }
+    .flagcontainer #bhutan .emblem {
+      width: 300px;
+      height: 200px;
+      top: -200px;
+      background-image: url("../images/bhutan_dragon.svg");
+      background-repeat: no-repeat;
+      background-size: 250px;
+      background-position: center; }
+  .flagcontainer #sv-g {
+    height: 200px;
+    width: 150px;
+    background-color: gold;
+    border-left: 75px solid blue;
+    border-right: 75px solid green; }
+    .flagcontainer #sv-g .diamond {
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-bottom: 28px solid green;
+      position: relative;
+      top: -20px; }
+    .flagcontainer #sv-g .diamond:after {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 28px;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top: 28px solid green; }
+    .flagcontainer #sv-g .d1 {
+      left: 27.5px;
+      top: 70px; }
+    .flagcontainer #sv-g .d2 {
+      left: 52.5px;
+      top: 55px; }
+    .flagcontainer #sv-g .d3 {
+      left: 77.5px;
+      top: -25px; }
+  .flagcontainer .ten-nineteen {
+    height: 200px;
+    width: 380px; }
+  .flagcontainer #usa {
+    background-color: crimson;
+    height: 169.2px;
+    border-top: 15.4px solid crimson;
+    border-bottom: 15.4px solid crimson; }
+    .flagcontainer #usa:before, .flagcontainer #usa:after {
+      content: " ";
+      display: inline-block;
+      background-color: crimson;
+      position: relative;
+      width: 380px;
+      height: 15.4px;
+      border-top: 15.4px solid white;
+      border-bottom: 15.4px solid white; }
+    .flagcontainer #usa:after {
+      top: -126.6px; }
+    .flagcontainer #usa .bar {
+      width: 380px;
+      background-color: crimson;
+      height: 15.4px;
+      border-top: 15.4px solid white;
+      border-bottom: 15.4px solid white;
+      top: 12px; }
+    .flagcontainer #usa .usa-stars {
+      height: 154px;
+      width: 154px;
+      background-image: url("../images/usa_stars.svg");
+      background-size: 153px;
+      background-repeat: no-repeat;
+      top: -111.5px; }
+  .flagcontainer .one-two {
+    height: 200px;
+    width: 400px; }
+  .flagcontainer #seychelles {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    overflow: hidden; }
+    .flagcontainer #seychelles .bar {
+      height: 150px;
+      width: 440px; }
+    .flagcontainer #seychelles .white {
+      background-color: white;
+      top: 125px;
+      left: 10px;
+      transform: rotate(-19deg); }
+    .flagcontainer #seychelles .green {
+      background-color: green;
+      top: 12.5px;
+      transform: rotate(-10deg); }
+    .flagcontainer #seychelles .gold {
+      background-color: gold;
+      top: -362px;
+      left: -82px;
+      transform: rotate(-35deg); }
+    .flagcontainer #seychelles .blue {
+      background-color: blue;
+      top: -553px;
+      left: -175px;
+      transform: rotate(-60deg); }
+  .flagcontainer #kuwait {
+    background-color: darkred; }
+    .flagcontainer #kuwait:before {
+      content: " ";
+      display: inline-block;
+      background-color: green;
+      height: 66.67px;
+      border-bottom: 66.67px solid white;
+      width: 400px; }
+    .flagcontainer #kuwait .trapezoid {
+      border-bottom: 100px solid black;
+      border-left: 66.665px solid transparent;
+      border-right: 66.665px solid transparent;
+      height: 0;
+      width: 66.67px; }
+    .flagcontainer #kuwait .trapezoid {
+      transform: rotate(90deg);
+      top: -86.67px;
+      left: -50px; }
+  .flagcontainer #dprk {
+    background-color: red;
+    width: 400px;
+    height: 136px;
+    border-top: 32px solid navy;
+    border-bottom: 32px solid navy; }
+    .flagcontainer #dprk:before, .flagcontainer #dprk:after {
+      content: " ";
+      display: inline-block;
+      width: 400px;
+      height: 5px;
+      background-color: white;
+      position: relative;
+      top: -9px; }
+    .flagcontainer #dprk:after {
+      top: -127px; }
+    .flagcontainer #dprk .circle {
+      width: 100px;
+      height: 100px;
+      background: white;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px; }
+    .flagcontainer #dprk .circle {
+      left: 66.67px; }
+    .flagcontainer #dprk .star {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: red;
+      width: 0px;
+      height: 0px;
+      border-right: 45px solid transparent;
+      border-bottom: 31.5px solid red;
+      border-left: 45px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .flagcontainer #dprk .star:before {
+      border-bottom: 36px solid red;
+      border-left: 13.5px solid transparent;
+      border-right: 13.5px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -20.25px;
+      left: -29.25px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .flagcontainer #dprk .star:after {
+      position: absolute;
+      display: block;
+      color: red;
+      top: 1.35px;
+      left: -47.25px;
+      width: 0px;
+      height: 0px;
+      border-right: 45px solid transparent;
+      border-bottom: 31.5px solid red;
+      border-left: 45px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+    .flagcontainer #dprk .star {
+      top: -119px;
+      left: 73px; }
+  .flagcontainer #angloind {
+    background-color: green;
+    overflow: hidden; }
+    .flagcontainer #angloind:before {
+      content: " ";
+      display: inline-block;
+      width: 400px;
+      height: 100px;
+      background-color: orange; }
+    .flagcontainer #angloind .bar {
+      height: 7px;
+      width: 225px;
+      border-top: 18px solid white;
+      border-bottom: 3px solid white;
+      margin-bottom: 1px; }
+    .flagcontainer #angloind .one {
+      top: -74px;
+      left: -17px;
+      transform: rotate(27deg); }
+    .flagcontainer #angloind .two {
+      top: -96px;
+      left: 197px;
+      transform: rotate(153deg); }
+    .flagcontainer #angloind .three {
+      top: -18px;
+      left: 197px;
+      transform: rotate(207deg); }
+    .flagcontainer #angloind .four {
+      top: -53px;
+      left: -17px;
+      transform: rotate(335deg); }
+    .flagcontainer #angloind #angloind-whitecross {
+      top: -220px;
+      left: 184px; }
+      .flagcontainer #angloind #angloind-whitecross .cross {
+        background: white;
+        height: 202px;
+        position: relative;
+        width: 42px; }
+      .flagcontainer #angloind #angloind-whitecross .cross:after {
+        background: white;
+        content: "";
+        height: 42px;
+        left: -188px;
+        position: absolute;
+        top: 80.8px;
+        width: 470px; }
+    .flagcontainer #angloind #angloind-redcross {
+      top: -422px;
+      left: 192px; }
+      .flagcontainer #angloind #angloind-redcross .cross {
+        background: crimson;
+        height: 222px;
+        position: relative;
+        width: 26px; }
+      .flagcontainer #angloind #angloind-redcross .cross:after {
+        background: crimson;
+        content: "";
+        height: 26px;
+        left: -196px;
+        position: absolute;
+        top: 88.8px;
+        width: 490px; }
+    .flagcontainer #angloind .emblem {
+      height: 38px;
+      width: 38px;
+      background-image: url("../images/ashoka_chakra.png");
+      background-size: 38px;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: -561px;
+      left: 186px; }
+  .flagcontainer .eleven-twentyeight {
+    height: 198px;
+    width: 336px;
+    background-color: #8a1538; }
+  .flagcontainer #qatar {
+    border-left: 168px solid white;
+    overflow: hidden; }
+    .flagcontainer #qatar .diamond {
+      width: 0;
+      height: 0;
+      border: 37.5px solid transparent;
+      border-bottom: 11.13px solid white;
+      position: relative;
+      top: -37.5px; }
+    .flagcontainer #qatar .diamond:after {
+      content: '';
+      position: absolute;
+      left: -37.5px;
+      top: 11.13px;
+      width: 0;
+      height: 0;
+      border: 37.5px solid transparent;
+      border-top: 11.13px solid white; }
+    .flagcontainer #qatar .diamond {
+      left: -37px;
+      margin-top: 10.9px;
+      border-top: 0;
+      top: -11px; }
+  .flagcontainer .red {
+    background-color: red; }
 
-.mexico {
-  width: 133px;
-  border-left: 133px solid #006847;
-  border-right: 133px solid #ce1126;
-  background: url(../images/donkey.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100px;
-}
+/*# sourceMappingURL=master.css.map */

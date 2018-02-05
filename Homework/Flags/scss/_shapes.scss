@@ -1,0 +1,213 @@
+/*
+Initial Code Provided by
+css-tricks.com/examples/ShapesOfCSS/
+*/
+
+@mixin star($color, $scale) {
+
+  .star {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: $color;
+   width: 0px;
+   height: 0px;
+   border-right:  100px*$scale solid transparent;
+   border-bottom: 70px*$scale  solid $color;
+   border-left:   100px*$scale solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+  }
+  .star:before {
+   border-bottom: 80px*$scale solid $color;
+   border-left: 30px*$scale solid transparent;
+   border-right: 30px*$scale solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px*$scale;
+   left: -65px*$scale;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+  }
+  .star:after {
+   position: absolute;
+   display: block;
+   color: $color;
+   top: 3px*$scale;
+   left: -105px*$scale;
+   width: 0px;
+   height: 0px;
+   border-right: 100px*$scale solid transparent;
+   border-bottom: 70px*$scale solid $color;
+   border-left: 100px*$scale solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+  }
+}
+
+@mixin triangle($color, $scale){
+  .triangle{
+	 width: 0;
+	 height: 0;
+	 border-top: 50px*$scale solid transparent;
+	 border-left: 80px*$scale solid $color;
+	 border-bottom: 50px*$scale solid transparent;
+  }
+}
+
+@mixin crescent($color, $scale) {
+  .crescent {
+    width: 80px*$scale;
+    height: 80px*$scale;
+    border-radius: 50%;
+    box-shadow: 15px*$scale 15px*$scale 0 0 $color;
+  }
+}
+
+@mixin yinyang($color1, $color2, $scale) {
+  .yinyang {
+	   width: 96px*$scale;
+	   height: 48px*$scale;
+	   background: $color1;
+	   border-color: $color2;
+	   border-style: solid;
+	   border-width: 0px 0px 50px 0px;
+	   border-radius: 100%;
+	   position: relative;
+   }
+
+   .yinyang:before {
+	   content: "";
+	   position: absolute;
+	   top: 50%;
+	   left: 50%;
+	   background: $color2;
+	   border: 18px*$scale solid $color2;
+	   border-radius: 100%;
+	   width: 12px*$scale;
+	   height: 6px*$scale;
+   }
+
+   .yinyang:after {
+	   content: "";
+	   position: absolute;
+	   top: 50%;
+	   left: 0%;
+	   background: $color1;
+	   border: 18px*$scale solid $color1;
+	   border-radius:100%;
+	   width: 12px*$scale;
+	   height: 6px*$scale;
+   }
+}
+
+@mixin diamond($color, $scaleX, $scaleY) {
+  .diamond {
+	   width: 0;
+	   height: 0;
+	   border: 50px*$scaleX solid transparent;
+     border-bottom: 70px*$scaleY solid $color;
+	   position: relative;
+	   top: -50px*$scaleX;
+   }
+   .diamond:after {
+	    content: '';
+	    position: absolute;
+	    left: -50px*$scaleX;
+      top: 70px*$scaleY;
+	    width: 0;
+	    height: 0;
+	    border: 50px*$scaleX solid transparent;
+	    border-top: 70px*$scaleY solid $color;
+    }
+}
+
+@mixin twelver($color, $scale) {
+  .twelver {
+    background: $color;
+    width: 80px*$scale;
+    height: 80px*$scale;
+    position: relative;
+    text-align: center;
+  }
+  .twelver:before, .twelver:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px*$scale;
+    width: 80px*$scale;
+    background: $color;
+  }
+  .twelver:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+  }
+  .twelver:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+  }
+}
+
+@mixin botleft-triangle($color, $sizeX, $sizeY) {
+  .botleft-triangle {
+	   width: 0;
+	   height: 0;
+	   border-bottom: 1px*$sizeY solid $color;
+	   border-right: 1px*$sizeX solid transparent;
+   }
+}
+
+@mixin trapezoid($color, $height, $capWidth, $baseWidth) {
+  .trapezoid {
+     $difference: ($baseWidth - $capWidth)/2;
+	   border-bottom: 1px*$height solid $color;
+	   border-left: 1px*$difference solid transparent;
+	   border-right: 1px*$difference solid transparent;
+	   height: 0;
+	   width: 1px*$capWidth;
+   }
+}
+
+@mixin circle($color, $radius) {
+  .circle {
+	   width: 1px*$radius;
+	   height: 1px*$radius;
+	   background: $color;
+	   -moz-border-radius: .5px*$radius;
+	   -webkit-border-radius: .5px*$radius;
+	   border-radius: .5px*$radius;
+   }
+}
+
+@mixin cross($color, $thickness, $height, $width) {
+  .cross {
+    background: $color;
+    height: 1px*$height;
+    position: relative;
+    width: 1px*$thickness;
+  }
+  .cross:after {
+    background: $color;
+    content: "";
+    height: 1px*$thickness;
+    left: -.4px*$width;
+    position: absolute;
+    top: .4px*$height;
+    width: 1px*$width;
+  }
+}

@@ -1,0 +1,10 @@
+p {
+  color: #ffcc00;
+  border: 6px solid #006847; }
+  p a {
+    color: rgba(0, 104, 71, 0.5);
+    color: gray(50%); }
+    p a:hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=master.css.map */

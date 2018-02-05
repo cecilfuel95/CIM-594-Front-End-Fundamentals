@@ -1,0 +1,11 @@
+p {
+  color: $orange;
+  border: $number+px solid $green;
+  a {
+    color: rgba($green,0.5);
+    color: gray(50%);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
