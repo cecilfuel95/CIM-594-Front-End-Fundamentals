@@ -1,5 +1,5 @@
 @import "shapes";
-
+@import "colors";
 
 .flagcontainer {
   background-color: #ddd;
@@ -611,6 +611,6 @@
   }
 
   .red {
-    background-color: red;
+    background-color: $red;
   }
 }
