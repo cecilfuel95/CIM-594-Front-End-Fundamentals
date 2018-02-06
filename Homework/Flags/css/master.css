@@ -2,6 +2,10 @@
 Initial Code Provided by
 css-tricks.com/examples/ShapesOfCSS/
 */
+@media only screen and (max-width: 640px) {
+  body {
+    background-color: green; } }
+
 .flagcontainer {
   background-color: #ddd;
   width: 500px;
@@ -877,6 +881,6 @@ css-tricks.com/examples/ShapesOfCSS/
       border-top: 0;
       top: -11px; }
   .flagcontainer .red {
-    background-color: red; }
+    background-color: #ff0000; }
 
 /*# sourceMappingURL=master.css.map */
