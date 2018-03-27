@@ -4,7 +4,7 @@ css-tricks.com/examples/ShapesOfCSS/
 */
 @media only screen and (max-width: 640px) {
   body {
-    background-color: green; } }
+    background-color: white; } }
 
 .flagcontainer {
   background-color: #ddd;

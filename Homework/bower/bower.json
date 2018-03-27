@@ -1,0 +1,21 @@
+{
+  "name": "Bower Demo",
+  "homepage": "https://github.com/cecilfuel95/CIM-594-Front-End-Fundamentals",
+  "authors": [
+    "cecilfuel95 <cecilfuel95@miami.edu>"
+  ],
+  "description": "Demo Project for CIM 594",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0"
+  }
+}
